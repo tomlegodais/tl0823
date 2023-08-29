@@ -1,0 +1,57 @@
+# Gradle build directories
+.gradle/
+build/
+
+# IntelliJ IDEA directories
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse directories
+.classpath
+.project
+.settings/
+bin/
+target/
+
+# Compiled Java class files
+*.class
+
+# Log files
+*.log
+logs/
+*.log.*
+log/
+
+# Spring Boot generated files
+spring-boot-starter-logging/
+spring-boot-starter-tomcat/
+spring-boot-*.jar
+
+# AWS CDK generated files
+cdk.context.json
+cdk.out/
+cdk.context/
+
+# Application configuration files
+application.properties
+application.yml
+
+# Compiled binaries
+out/
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.swp
+*~
+.idea_modules/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

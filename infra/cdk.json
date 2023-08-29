@@ -1,0 +1,6 @@
+{
+  "app": "gradle -q compileJava run",
+  "context": {
+    "project-name": "tl0823"
+  }
+}
