@@ -1,0 +1,745 @@
+{
+  "info": {
+    "_postman_id": "cf111a80-8072-4520-82b3-3b96562fb4f6",
+    "name": "tl0823",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "10649066"
+  },
+  "item": [
+    {
+      "name": "localhost",
+      "item": [
+        {
+          "name": "/actuator/health",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/actuator/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "actuator",
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"JAKR\",\r\n    \"type\": {\r\n        \"name\": \"Jackhammer\",\r\n        \"priceInfo\": {\r\n            \"dailyCharge\": 2.99,\r\n            \"weekdayCharge\": true,\r\n            \"weekendCharge\": false,\r\n            \"holidayCharge\": false\r\n        }\r\n    },\r\n    \"brand\": {\r\n        \"name\": \"Ridgid\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/id/{id}",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/id/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "id",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/code/{code}",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/code/LADR",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "code",
+                "LADR"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/types",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Chainsaw\",\r\n    \"priceInfo\": {\r\n        \"dailyCharge\": 1.35,\r\n        \"holidayCharge\": true,\r\n        \"weekdayCharge\": false,\r\n        \"weekendCharge\": true\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/types",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "types"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/types",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/types",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "types"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/types/{id}",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/types/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "types",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/brands",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Werner\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/brands",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "brands"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/brands",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/brands",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "brands"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/brands/{id}",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/brands/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "brands",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/price-info",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"dailyCharge\": 0.59,\r\n    \"weekdayCharge\": false,\r\n    \"holidayCharge\": true,\r\n    \"weekendCharge\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/price-info",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "price-info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/price-info",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/price-info",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "price-info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/price-info/{id}",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/price-info/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "price-info",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/rental-agreements",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"toolCode\": \"JAKR\",\r\n    \"discountPercentage\": 50,\r\n    \"rentalDays\": 4,\r\n    \"checkoutDate\": \"07/02/20\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/rental-agreements",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "rental-agreements"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/rental-agreements",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/rental-agreements",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "rental-agreements"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/tools/rental-agreements/{id}",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{default-user}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{default-password}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:80/api/v1/tools/rental-agreements/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "tools",
+                "rental-agreements",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/v1/users/register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"username\": \"tomlegodais\", \"password\": \"trustno1!\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:80/api/v1/users/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "80",
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "default-user",
+      "value": "user",
+      "type": "string"
+    },
+    {
+      "key": "default-password",
+      "value": "password",
+      "type": "string"
+    }
+  ]
+}
